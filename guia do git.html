@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Git</title>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Git</title>
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">	
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="gitlogo.png" width="10%" ></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="hh.png" alt="First slide">
+    </div>
+<div class="container">
+  <br>
+  <p>Git e GitHub são duas ferramentas muito interessantes para os desenvolvedores. O Git, apesar de sua complexidade, é a ferramenta de controle de versão favorita da maioria dos profissionais, de web designers a desenvolvedores kernel.</p>
+
+<p>Já o GitHub é a plataforma de hospedagem de código mais utilizada do mundo e onde você encontrará de tudo, de experimentos lúdicos e simples ao próprio kernel do Linux.</p>
+
+<p>Ambas as ferramentas são extremamente sofisticadas, proporcionando uma vasta gama de funcionalidades. E, para extrair o máximo de cada uma, é preciso estar preparado para as complexidades que se apresentarão pelo caminho.</p>
+
+<p>Leia: Por que todo profissional deve aprender programação?</p>
+
+<h1>Como usar o Git</h1>
+<p>O Git é um sistema de controle de versão de arquivos e, antes de abordar mesmo conceitos básicos de GitHub, é importante entender como funciona esse repositório local.<p>
+
+<h1>Fundamentos de Git</h1>
+<b>Passo 1</b>
+
+<p>Antes de qualquer coisa, é preciso que você instale algumas coisas, como a versão mais recente de Git para o seu sistema operacional. Se estiver usando o Linux, você poderá instalá-la usando seu gerenciador de pacotes.</p>
+
+<b>Passo 2</b>
+
+<p>É preciso que você esteja minimamente familiarizado com a utilização da linha de comando. Caso ainda não esteja, tudo bem: este artigo trata tudo de forma clara e simples.</p>
+
+<b>Passo 3</b>
+
+<p>Crie um repositório simples, composto por um arquivo de código e um README. Certifique-se de ter um diretório reservado para isso.</p>
+
+<p>Com tudo preparado, agora vamos passar para um conjunto padrão de ações que você costuma seguir diariamente – mais especificamente, init, clone, add, commit, diff e log.</p>
+
+<h1>Começando um repositório</h1>
+<p>O primeiro passo para trabalhar com o Git é inicializar um repositório de projeto para que o próprio Git possa gerenciá-lo. Para isso, execute o comando git init . como demonstrado abaixo.<p>
+
+<p>Um novo diretório oculto chamado .git surgirá no diretório de seu projeto. Nesse local, o Git armazena seus conjuntos de dados e informações de configuração.</p>
+
+<img src="1.png">
+<br>
+
+<div class ="container">
+<br>
+
+<h1>Clonando um repositório</h1>
+
+<p>Esta é uma maneira alternativa de acessar um repositório: clonando. Semelhante à verificação de um repositório em outros sistemas, executar a função git clone < repository URL > criará uma cópia completa do repositório remoto em seu sistema local. Agora, você pode modificá-lo da maneira que quiser.</p>
+
+<b>Leia: Ele trocou a engenharia de software por data science</b>
+
+<h1>Adicionando um novo arquivo</h1>
+
+<p>Eu sou um desenvolvedor PHP, então utilizarei essa ferramenta para o tutorial. Se preferir utilizar o Python, Go ou alguma outra linguagem, fique à vontade. Crie um novo arquivo, chamado index.php, no diretório de seu projeto e adicione o seguinte código:</p>
+
+<p><?php print "Hello World";</p>
+
+<p>Salve o arquivo e execute o comando git status. Isso exibirá o status atual de seu repositório, que, por sua vez, deve ser semelhante à captura de tela abaixo, com index.php listado como um novo arquivo não rastreado.</p>
+
+<img src="2.png">
+<br>
+
+<div class="container">
+<br>
+
+<p> Agora, vamos focar apenas no index.php e deixar o README.md de lado, por enquanto. Para isso, execute o comando git add index.php. Em seguida, execute git status novamente e você verá index.php listado como um novo arquivo ““Changes to be committed,” e README.md dentre os arquivos não rastreados.</p>
+
+<img src="3.png">
+<br>
+<p
+
+
+
+
+</body>
+</html>
