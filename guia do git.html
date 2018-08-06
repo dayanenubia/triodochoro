@@ -119,7 +119,50 @@
 
 <img src="3.png">
 <br>
-<p
+<h1>Atualizando a configuração do Git</h1>
+<p>Agora você está pronto para o commit index.php. Antes disso, quero mostrar como configurar o editor que o Git utilizará quando você escrever mensagens de commit. Isso pode ser muito útil, especialmente se você não for um usuário de linha de comando.</p>
+<p>Por padrão, o Git usa o programa especificado nas variáveis ​​de ambiente $ VISUAL ou $ EDITOR que, em sistemas Linux, normalmente são pico, vi, vim ou emacs. Se não está familiarizado com isso, talvez seja melhor migrar para uma ferramenta que já conheça, como o Notepad, TextEdit, or Gedit.</p>
+<p>Para isso, execute o seguinte comando:</p>
+<b>git config --global core.editor <nome do seu app></b>
+<p>Existem muitas outras mudanças de configurações possíveis, como seu nome ou e-mail, o padrão visual da mensagem de commit, etc. Para ver a lista completa, entre na seção de configuração do Git. Para esse tutorial, usarei o vim como meu editor. Mas use o que você preferir.</p>
+<h1>O primeiro commit</h1>
+<p>O commit do Git é muito parecido com o commit de outros sistemas de controle de versão, como o Subversion. Após iniciado o processo, adicione uma mensagem de commit que explique o motivo da alteração e pronto. O arquivo está alterado. Execute git commit. Seu editor abrirá e aparecerá o modelo de commit abaixo:</p>
+<b># Please enter the commit message for your changes. Lines starting</b>
+<b># with '#' will be ignored, and an empty message aborts the commit.</b>
+<b># On branch master</b>
+<b># </b>
+<b># Initial commit</b>
+<b>#</b>
+<b># Changes to be committed:</b>
+<b># new file:   index.php</b>
+<b>#</b>
+<b># Untracked files:</b>
+<b># README.md</b>
+<p>Tal como acontece com o output do git status, você pode acompanhar o status de seu repositório de trabalho, o que facilita lembrar onde está trabalhando com commit e onde não está.</p>
+<p>Uma boa mensagem de commit é composta por duas partes: uma mensagem curta, com menos de 72 caracteres, o que indica resumidamente (na voz ativa) a alteração que está sendo feita; e uma descrição mais longa e opcional.</p>
+<p>No nosso caso, não é necessário escrever nada muito elaborado. Estamos apenas adicionando o arquivo ao repositório. Mas, se a alteração envolvesse um algoritmo mais complexo, seria importante compartilhar com seus colegas desenvolvedores o motivo pelo qual efetuou a mudança.</p>
+<p>Agora, adicione apenas a mensagem “Adicionando arquivo de script ao repositório”, salve e feche o editor. Execute git status novamente e você verá que README.md continua listado como não rastreado.</p>.
+<img src="5.png">
+<h3>Referências e estudos complementares</h3>
+<p>O que vimos até aqui são os fundamentos do Git e do GitHub. E, embora haja muitos conceitos a serem adotados, uma vez que você consegue entender o básico, o domínio desses fundamentos virão com o tempo.</p>
+<p>Não temos tempo para tratarmos de tudo aqui e existe muito mais a ser explorado. Para isso, a comunidade por trás dessas duas ferramentas servirá como um indispensável suporte colaborativo. Você estará em boas mãos.</p>
+<p>Leia: 21 (possíveis) empregos do futuro para conhecer hoje</p>
+<p>Abaixo, confira os links para leituras e estudos complementares. Com tudo isso em mãos, você encontrará quase tudo que precisa para se tornar um mestre em Git e GitHub.</p>
+<br>
+
+<li>http://git-scm.com/book/en/v2/</li>
+<li>https://github.com/</li>
+<li>https://help.github.com/</li>
+<li>https://try.github.io/levels/1/challenges/1</li>
+<li>http://gitref.org/</li>
+<li>https://www.atlassian.com/git/</li>
+<li>http://rogerdudler.github.io/git-guide/</li>
+<li>https://help.github.com/articles/good-resources-for-learning-git-and-github/</li>
+<li>http://gitimmersion.com/</li>
+
+<div class="container">
+<br>
+<a href="introducao.html"><img src="6.png"></a>
 
 
 
