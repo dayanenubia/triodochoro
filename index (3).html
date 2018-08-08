@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bootstrap Form</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-dark">
+
+    <div class="container bg-light">
+      <!-- Seu código vai aqui!! -->
+    	<div class="header">
+      		<h1>Formulario Bootstrap</h1>
+      		<p>Fórmulario lindo feito com a bibliotecamais coxa do mundo!</p>
+      	</div>
+      	<h2>Billing address</h2>
+    	<form>
+    		<div class="row">
+    			<div class="form-group col-md-4">
+    				Firt name
+        			<input type="text" class="form-control" placeholder="First name">
+    			</div>
+    			<div class="form-group col-md-4">
+    				Last name
+      				<input type="text" class="form-control" placeholder="Last name">
+    			</div>
+  			</div>
+  			<div class="row">
+  				<div class="form-grup col-md-8">
+  					Username
+        			<input type="text" class="form-control" placeholder="Username">
+      			</div>
+    		</div>
+    		<div class="row">
+    			<div class="form-grup col-md-8">
+    				Email
+      				<input type="email" class="form-control" placeholder="Email">
+    			</div>	
+    		</div>
+    	</form>
+    </div>
+
+    <!-- Não mexa daqui para baixo!!! -->
+    <script src="./assets/js/vendor/jquery-slim.min.js"></script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/vendor/holder.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>
